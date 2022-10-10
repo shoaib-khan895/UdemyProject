@@ -11,11 +11,12 @@ function app() {
   function addGoalHandler() {
     SetGoals(currentGoalState => [...currentGoalState, goalTextEntred]);
   }
-  
+
   return (
     <View style={styles.appContainer}>
       <View style={styles.InputContainer}>
         <TextInput
+        
           style={styles.textInput}
           placeholder="  Your Goal....."
           onChangeText={goalInputHandler}></TextInput>
